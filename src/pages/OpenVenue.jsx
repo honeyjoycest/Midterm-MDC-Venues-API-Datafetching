@@ -35,7 +35,7 @@ const OpenVenue = () => {
                   <th scope="col">Capacity</th>
                 </tr>
               </thead>
-              <tbody className="bg-dark text-light">
+              <tbody className="bg-primary text-light">
                 <tr>
                   <td>{venue.name}</td>
                   <td>{venue.building}</td>
@@ -50,7 +50,7 @@ const OpenVenue = () => {
 
         <div className="second_t d-flex justify-content-end">
           <div className="col-md-12">
-            <div className="container bg-dark shadow-md ">
+            <div className="container bg-light shadow-md ">
               <div className="card-header text-white">
 
               </div>
@@ -58,12 +58,12 @@ const OpenVenue = () => {
                 <table className="table table-borderless">
                   <thead className="head_2 text-white shadow-lg">
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Course No.</th>
-                      <th scope="col">Description</th>
-                      <th scope="col">Teacher</th>
-                      <th scope="col">Size</th>
-                      <th scope="col">Schedule</th>
+                    <td class="table-active">ID</td>
+                    <td class="table-primary">Course No</td>
+                    <td class="table-secondary">Description</td>
+                    <td class="table-success">Schedule</td>
+                    <td class="table-danger">Size</td>
+                    <td class="table-warning">Teacher</td>
                     </tr>
                   </thead>
 
@@ -71,12 +71,12 @@ const OpenVenue = () => {
                     {Object.keys(schedule)?.map((sched, index) => {
                       return (
                         <tr key={index}>
-                          <td>{schedule[sched].id}</td>
-                          <td>{schedule[sched].course_no}</td>
-                          <td>{schedule[sched].description}</td>
-                          <td>{schedule[sched].teacher}</td>
-                          <td>{schedule[sched].size}</td>
-                          <td>{schedule[sched].schedule}</td>
+                         <td class="table-active">{schedule[sched].id}</td>
+                          <td class="table-primary">{schedule[sched].course_no}</td>
+                          <td class="table-secondary">{schedule[sched].description}</td>
+                          <td class="table-success">{schedule[sched].schedule}</td>
+                          <td class="table-danger">{schedule[sched].size}</td>
+                          <td class="table-warning">{schedule[sched].teacher}</td>
                         </tr>
                       );
                     })}
