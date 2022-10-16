@@ -26,9 +26,7 @@ const Venues = () => {
                 <div className="ven shadow-lg">
                 
                     <h1><img src={Logo} alt=""/> Mater Dei College </h1>
-                    <p>Cabulijan, Tubigon, Bohol</p>
-
-                    <p className="title_venues">List of Venues</p>
+                    <p>L I S T OF V E N U E S</p>
                 </div>
                
                 <div className="card-body shadow-lg">
@@ -52,7 +50,7 @@ const Venues = () => {
                                         <td>{data[venue].name}</td>
                                         <td>{data[venue].building}</td>
                                         <td>{data[venue].capacity}</td>
-                                        <td><a className="btn btn-sm" onClick={() => {
+                                        <td><a className="btn btn-sm text-dark" onClick={() => {
                                             venueOnSched(data[venue].id);
                                         }}>
                                              Open</a></td>

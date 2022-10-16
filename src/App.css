@@ -22,7 +22,7 @@
   color: dimgray;
   margin-top: -70px;
   margin-left: 150px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Playfair Display SC', serif;;
 }
 
 
@@ -34,7 +34,7 @@
 }
 
 td  .btn{
-  background-color: #027457;
+  background-color: #87ff4f;
   color: whitesmoke;
 }
 
