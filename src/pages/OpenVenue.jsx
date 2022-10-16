@@ -19,13 +19,13 @@ const OpenVenue = () => {
 
   return (
 
-    <div className="venue col-md-12 mt-3">
+    <div className="venue col-md-12 mt-3 ">
       <div className="container" >
-        <h1 className="title_2"> <img src={Logo} alt=""/> Mater Dei College {venue.building}</h1>
+        <h1 className="title_2 font-link"> <img src={Logo} alt=""/> Mater Dei College {venue.building}</h1>
         <div className="d-flex justify-content-start">
         </div>
 
-        <div className="d-flex justify-content-center mb-1">
+        <div className="d-flex justify-content-center mb-1 ">
           <div className="col-md-4">
             <table className="table">
               <thead>
@@ -48,7 +48,7 @@ const OpenVenue = () => {
 
         <p className="id"> ID: {id}</p>
 
-        <div className="second_t d-flex justify-content-end">
+        <div className="second_t d-flex justify-content-end ">
           <div className="col-md-12">
             <div className="container bg-light shadow-md ">
               <div className="card-header text-white">

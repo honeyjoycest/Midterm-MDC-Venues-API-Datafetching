@@ -24,8 +24,7 @@ const Venues = () => {
         <div className="venues">
             <div className="card bg-light col-md-11 mx-auto mt-3 mb-5">
                 <div className="ven shadow-lg">
-                
-                    <h1><img src={Logo} alt=""/> Mater Dei College </h1>
+                    <h1><img src ={Logo} alt=""/> Mater Dei College </h1>
                     <p>L I S T OF V E N U E S</p>
                 </div>
                
