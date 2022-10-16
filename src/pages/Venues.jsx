@@ -36,26 +36,26 @@ const Venues = () => {
                         <thead className="head_1 text-light shadow-lg">
                             <tr>
 
-                                <th scope="col">View</th>
                                 <th scope="col">ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Building</th>
                                 <th scope="col">Capacity</th>
+                                <th scope="col">View</th>
 
                             </tr>
                         </thead>
                         <tbody className="">
                             {Object.keys(data)?.map((venue, index) => {
                                 return (
-                                    <tr key={index}>
-                                        <td><a className="btn btn-sm" onClick={() => {
-                                            venueOnSched(data[venue].id);
-                                        }}>
-                                            Open</a></td>
+                                    <tr key={index}> 
                                         <td>{data[venue].id}</td>
                                         <td>{data[venue].name}</td>
                                         <td>{data[venue].building}</td>
                                         <td>{data[venue].capacity}</td>
+                                        <td><a className="btn btn-sm" onClick={() => {
+                                            venueOnSched(data[venue].id);
+                                        }}>
+                                             Open</a></td>
 
 
                                     </tr>

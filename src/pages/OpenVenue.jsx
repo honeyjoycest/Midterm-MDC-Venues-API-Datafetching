@@ -80,6 +80,9 @@ const OpenVenue = () => {
                         </tr>
                       );
                     })}
+                    <Link to="/Venues" className="btn btn-sm btn-primary mt-1">
+                      Back
+                    </Link>
 
                   </tbody>
                 </table>
