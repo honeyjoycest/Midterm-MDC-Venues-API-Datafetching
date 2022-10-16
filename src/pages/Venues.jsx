@@ -37,7 +37,7 @@ const Venues = () => {
                                 <th scope="col">Name</th>
                                 <th scope="col">Building</th>
                                 <th scope="col">Capacity</th>
-                                <th scope="col">View</th>
+                                <th scope="col">Action</th>
 
                             </tr>
                         </thead>
